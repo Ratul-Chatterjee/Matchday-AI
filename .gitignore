@@ -1,3 +1,6 @@
+# Old subfolder (moved to root)
+matchday-ai/
+
 # Dependencies
 node_modules/
 __pycache__/
