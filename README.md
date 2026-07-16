@@ -6,7 +6,6 @@
 
 | 16 Stadiums | 48 Teams | 104 Matches | 3 Countries |
 |:-----------:|:--------:|:-----------:|:-----------:|
-| | | | |
 
 Matchday AI is a mobile-first, AI-powered web application built for fans attending the 2026 FIFA World Cup. It combines smart ticket scanning, real-time stadium navigation, an AI chatbot, live match data, and multi-language voice translation — all in a single app with no account required.
 
@@ -20,13 +19,13 @@ The app opens with a FIFA World Cup 2026 branded landing page featuring a hero i
 ### 5-Tab App Layout
 Once inside, fans navigate between five core tabs:
 
-| Tab | Icon | Purpose |
-|-----|------|---------|
-| **Ticket** | Ticket | Scan or paste ticket data, extract seat info via AI |
-| **Map** | MapPin | Interactive stadium map with gate markers and route guidance |
-| **Chat** | Chat | AI stadium assistant for amenities, food, directions |
-| **Live** | Chart | Scores, group standings, knockout brackets |
-| **Voice** | Globe | Real-time voice and text translation in 12 languages |
+| Tab | Purpose |
+|-----|---------|
+| **Ticket** | Scan or paste ticket data, extract seat info via AI |
+| **Map** | Interactive stadium map with gate markers and route guidance |
+| **Chat** | AI stadium assistant for amenities, food, directions |
+| **Live** | Scores, group standings, knockout brackets |
+| **Voice** | Real-time voice and text translation in 12 languages |
 
 ---
 
@@ -65,7 +64,7 @@ Track the entire tournament from a single tab. View real-time scores for the cur
 ### 5. Multi-Language Voice Translator
 Break language barriers in real-time. Speak in your language, and the app transcribes your speech, translates it via Google Cloud Translation API, and reads the translation aloud in the target language. Supports 12 languages covering all FIFA World Cup 2026 participating nations.
 
-| | | | |
+|Languages | | | |
 |:---:|:---:|:---:|:---:|
 | English | Spanish | French | German |
 | Portuguese | Arabic | Chinese | Japanese |
