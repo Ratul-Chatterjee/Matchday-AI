@@ -1,0 +1,13 @@
+{
+  "name": "Matchday AI",
+  "short_name": "MatchdayAI",
+  "description": "AI-powered stadium guide for FIFA World Cup 2026",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#030712",
+  "theme_color": "#111827",
+  "orientation": "portrait",
+  "icons": [
+    { "src": "/logo.svg", "sizes": "512x512", "type": "image/svg+xml" }
+  ]
+}

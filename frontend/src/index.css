@@ -1,0 +1,164 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply bg-gray-950 text-white min-h-screen;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  }
+
+  ::selection {
+    @apply bg-fifa-gold/30 text-white;
+  }
+
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-gray-900;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-gray-700 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-gray-600;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-gray-900/80 backdrop-blur-sm rounded-2xl border border-gray-800 p-4;
+  }
+
+  .card-glow {
+    @apply bg-gray-900/80 backdrop-blur-sm rounded-2xl border border-gray-800 p-4;
+    box-shadow: 0 0 0 1px rgba(255, 184, 28, 0.1), 0 4px 20px rgba(0, 0, 0, 0.3);
+  }
+
+  .btn-primary {
+    @apply bg-gradient-to-r from-fifa-blue to-blue-700 hover:from-blue-700 hover:to-fifa-blue text-white font-semibold py-3 px-6 rounded-xl transition-all duration-200 active:scale-95;
+    box-shadow: 0 4px 14px 0 rgba(0, 32, 91, 0.39);
+  }
+
+  .btn-secondary {
+    @apply bg-gray-800/80 hover:bg-gray-700/80 text-white font-medium py-2 px-4 rounded-xl transition-all duration-200 active:scale-95 border border-gray-700/50;
+  }
+
+  .btn-danger {
+    @apply bg-gradient-to-r from-fifa-red to-red-700 hover:from-red-700 hover:to-fifa-red text-white font-semibold py-3 px-6 rounded-xl transition-all duration-200 active:scale-95;
+    box-shadow: 0 4px 14px 0 rgba(200, 16, 46, 0.39);
+  }
+
+  .btn-gold {
+    @apply bg-gradient-to-r from-fifa-gold to-amber-500 hover:from-amber-500 hover:to-fifa-gold text-gray-900 font-bold py-3 px-6 rounded-xl transition-all duration-200 active:scale-95;
+    box-shadow: 0 4px 14px 0 rgba(255, 184, 28, 0.39);
+  }
+
+  .input-field {
+    @apply w-full bg-gray-800/80 border border-gray-700/50 rounded-xl px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-fifa-gold/50 focus:border-fifa-gold/50 transition-all;
+  }
+
+  .section-title {
+    @apply text-lg font-bold text-white flex items-center gap-2;
+  }
+
+  .badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+  }
+
+  .glass {
+    @apply bg-gray-900/60 backdrop-blur-md border border-gray-700/50;
+  }
+
+  .glass-light {
+    @apply bg-white/5 backdrop-blur-md border border-white/10;
+  }
+
+  .text-gradient {
+    @apply bg-gradient-to-r from-fifa-blue via-fifa-gold to-fifa-red bg-clip-text text-transparent;
+  }
+
+  .text-gradient-gold {
+    @apply bg-gradient-to-r from-fifa-gold to-amber-400 bg-clip-text text-transparent;
+  }
+
+  .text-gradient-blue {
+    @apply bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent;
+  }
+
+  .hover-glow {
+    @apply transition-all duration-300;
+  }
+
+  .hover-glow:hover {
+    box-shadow: 0 0 20px rgba(255, 184, 28, 0.15), 0 0 40px rgba(0, 32, 91, 0.1);
+  }
+
+  .fifa-border {
+    @apply border border-fifa-gold/20;
+  }
+
+  .shimmer {
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.08), transparent);
+    background-size: 200% 100%;
+    animation: shimmer 2.5s linear infinite;
+  }
+
+  .nav-item {
+    @apply flex flex-col items-center gap-0.5 py-1.5 px-3 rounded-xl transition-all duration-200;
+  }
+
+  .nav-item-active {
+    @apply bg-fifa-blue/20 text-fifa-gold;
+    box-shadow: 0 0 10px rgba(255, 184, 28, 0.1);
+  }
+
+  .nav-item-inactive {
+    @apply text-gray-500 hover:text-gray-300;
+  }
+
+  .match-card {
+    @apply relative overflow-hidden rounded-2xl;
+    background: linear-gradient(135deg, rgba(0, 32, 91, 0.4), rgba(200, 16, 46, 0.2));
+    border: 1px solid rgba(255, 184, 28, 0.2);
+  }
+
+  .stadium-dot {
+    @apply w-2 h-2 rounded-full bg-fifa-gold;
+    box-shadow: 0 0 6px rgba(255, 184, 28, 0.6);
+  }
+}
+
+@layer utilities {
+  .safe-bottom {
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+
+  .safe-top {
+    padding-top: env(safe-area-inset-top, 0px);
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+}
